@@ -1,0 +1,23 @@
+<!-- interpolation oneway binding -->
+<p>
+  {{firstName}} {{lastName}}
+</p>
+<!-- property binding-->
+<h1 [innerText]="title"></h1>
+<button [disabled]="disable">I'm disabled</button>
+<button (click)="clickPlus()">click++</button>
+<button (click)="clickMinus()">click--</button>
+<p>you have clicked {{clickCount}}</p>
+
+<h2>{{title}}</h2>
+<button (click)="clickMe(); clickCount1=clickCount2">multiple events binding</button>
+<p>you have click {{clickCount1}}</p>
+<p>you have click {{clickCount2}}</p>
+
+<h1>Example for clear input field</h1>
+<input type="text" [value]="name" (input)="name=$event.target.value">
+<p>You have entered "{{name}}"</p>
+<button (click)="clearName()">Clear</button>
+
+
+

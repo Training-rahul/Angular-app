@@ -1,0 +1,12 @@
+.header{
+    float: right;
+}
+.form-control{
+    border-radius: 3px;
+    width:clamp(200px,22vw + 2rem,400px)
+}
+.search-icon{
+    position: absolute;
+    right: 30px;
+    top: 9px;;
+}

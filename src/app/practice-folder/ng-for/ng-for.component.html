@@ -1,0 +1,28 @@
+<button (click)="getData()">click</button>
+<h1>{{title}}</h1>
+<ul>
+  <p *ngFor="let name of movies">
+    <b>{{name.id}}</b> - {{name.name}}-{{name.budget}}-{{name.email}}
+  </p>
+</ul>
+
+<h1>{{title}}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Movie</th>
+      <th>Budget</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let name of movies;let i = index">
+      <td><b> {{i}}</b> </td>
+      <td> {{name.name}} </td>
+      <td> {{namedget}} </td>
+      <td> {{name.email}} </td>
+    </tr>
+  </tbody>
+</table>
