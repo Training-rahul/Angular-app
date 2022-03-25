@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -14,6 +15,9 @@ import { ContactComponent } from './practice-folder/Browser-router/contact/conta
 import { ErrorComponent } from './practice-folder/Browser-router/error/error.component';
 import { RoutingHtmlComponent } from './practice-folder/Browser-router/routing-html/routing-html.component';
 import { NgForComponent } from './practice-folder/ng-for/ng-for.component';
+import { NgSwitchComponent } from './practice-folder/ng-switch/ng-switch.component';
+import { NgIfComponent } from './practice-folder/ng-if/ng-if.component';
+import { TrackbyComponent } from './practice-folder/trackby/trackby.component';
 
 
 @NgModule({
@@ -29,11 +33,15 @@ import { NgForComponent } from './practice-folder/ng-for/ng-for.component';
     ErrorComponent,
     RoutingHtmlComponent,
     NgForComponent,
+    NgSwitchComponent,
+    NgIfComponent,
+    TrackbyComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

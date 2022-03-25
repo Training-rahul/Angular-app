@@ -13,6 +13,7 @@ export class NgForComponent implements OnInit {
   }
 
   title="Top 5 Movies"
+  title1="5 Names"
   getData() {
     
   }

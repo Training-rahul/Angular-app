@@ -1,0 +1,42 @@
+<button (click)="show()">if-condition</button>
+<p *ngIf="condition">
+  content to render, when the condition is true
+</p>
+<br>
+<br>
+<button (click)="show1()">if-else-condition</button>
+<p *ngIf="condition1; else elseBlock">
+  content to render, when the condition is true
+</p>
+<ng-template #elseBlock>
+  content to render, when the condition is false
+</ng-template>
+<br>
+<br>
+<button (click)="show2()">if-then-else</button>
+<div *ngIf="condition2; then thenBlock else elseB">
+  This content is not shown
+</div>
+<ng-template #thenBlock>
+  condition  true.
+</ng-template>
+<ng-template #elseB>
+  condition false
+</ng-template>
+
+<!-- checkbox -->
+<br><br>
+<input type="checkbox" [(ngModel)]="checked">
+<p *ngIf="checked">Checked</p>
+<p *ngIf="!checked">Un-Checked</p>
+
+<!-- if else -->
+
+<input type="checkbox" [(ngModel)]="checked1">
+<p *ngIf="checked1 else elseBlock1">Checked</p>
+<ng-template #elseBlock1>
+  Un-Checked by else block
+</ng-template>
+
+
+
