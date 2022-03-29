@@ -8,10 +8,10 @@ import { ErrorComponent } from '../practice-folder/Browser-router/error/error.co
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
-  {path:'home', component:HomeComponent},
-  {path:'about', component:AboutComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'**', component:ErrorComponent}
+  {path:'home', component:HomeComponent,data: { animation: "Home" }},
+  {path:'about', component:AboutComponent,data: { animation: "About" }},
+  {path:'contact', component:ContactComponent,data: { animation: "Contact" }},
+  {path:'**', component:ErrorComponent,data: { animation: "**" }}
 ]
 
 @NgModule({

@@ -77,6 +77,9 @@ header ul li a {
     top: 0;
 }
 @media only screen and (min-width:567px) {
+    header {
+        padding: 12px 20px;
+    }
     .menu-btn {
         display: none;
     }
