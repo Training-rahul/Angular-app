@@ -1,9 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition } from '@angular/animations';
 
 @Component({
   selector: 'app-trackby',
   templateUrl: './trackby.component.html',
-  styleUrls: ['./trackby.component.css']
+  styleUrls: ['./trackby.component.css'],
+  animations:[
+    trigger("fade",[
+      state('in',style({transform:'translateX(0)',opacity:1})),
+      // fade in when created. this could also be written as transition('void => *')
+      transition(":enter",[
+        style({transform:'translateX(200px)',opacity:0}),
+        animate(200)
+      ]),
+      transition(':leave',
+        animate(400, style({transform:'translateX(200px)',opacity:0})))
+    ])
+  ]
 })
 export class TrackbyComponent implements OnInit {
   title:String="Top 5 movies"

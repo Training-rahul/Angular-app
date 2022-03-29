@@ -19,6 +19,7 @@ import { NgForComponent } from './practice-folder/ng-for/ng-for.component';
 import { NgSwitchComponent } from './practice-folder/ng-switch/ng-switch.component';
 import { NgIfComponent } from './practice-folder/ng-if/ng-if.component';
 import { TrackbyComponent } from './practice-folder/trackby/trackby.component';
+import { RaRoutingHtmlComponent } from './practice-folder/Router-animation/ra-routing-html/ra-routing-html.component';
 
 
 @NgModule({
@@ -37,13 +38,14 @@ import { TrackbyComponent } from './practice-folder/trackby/trackby.component';
     NgSwitchComponent,
     NgIfComponent,
     TrackbyComponent,
+    RaRoutingHtmlComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

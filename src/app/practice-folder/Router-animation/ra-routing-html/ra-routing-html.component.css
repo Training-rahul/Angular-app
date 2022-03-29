@@ -1,0 +1,17 @@
+nav {
+    display: grid;
+    place-items: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+.nav-active {
+    text-decoration:underline;
+    text-decoration-color: brown;
+    text-underline-offset: 5px;
+}
