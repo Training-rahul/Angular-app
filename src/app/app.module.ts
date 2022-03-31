@@ -20,6 +20,7 @@ import { NgSwitchComponent } from './practice-folder/ng-switch/ng-switch.compone
 import { NgIfComponent } from './practice-folder/ng-if/ng-if.component';
 import { TrackbyComponent } from './practice-folder/trackby/trackby.component';
 import { RaRoutingHtmlComponent } from './practice-folder/Router-animation/ra-routing-html/ra-routing-html.component';
+import { TodoListComponent } from './practice-folder/todo-list/todo-list.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { RaRoutingHtmlComponent } from './practice-folder/Router-animation/ra-ro
     NgIfComponent,
     TrackbyComponent,
     RaRoutingHtmlComponent,
+    TodoListComponent,
   ],
   imports: [
     BrowserModule,

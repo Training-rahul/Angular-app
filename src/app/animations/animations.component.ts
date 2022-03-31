@@ -23,8 +23,22 @@ import {
   animate,
   group,
   keyframes,
-  animateChild
+  animateChild,
+  state,
 } from "@angular/animations";
+
+export const fade = [
+  trigger("fade",[
+    state('in',style({transform:'translateX(0)',opacity:1})),
+    // fade in when created. this could also be written as transition('void => *')
+    transition(":enter",[
+      style({transform:'translateX(200px)',opacity:0}),
+      animate(200)
+    ]),
+    transition(':leave',
+      animate(400, style({transform:'translateX(200px)',opacity:0})))
+  ])
+]
 
 export const slideInAnimation = trigger("routeAnimations", [
   transition("Contact => *", [
