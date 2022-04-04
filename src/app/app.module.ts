@@ -21,6 +21,8 @@ import { NgIfComponent } from './practice-folder/ng-if/ng-if.component';
 import { TrackbyComponent } from './practice-folder/trackby/trackby.component';
 import { RaRoutingHtmlComponent } from './practice-folder/Router-animation/ra-routing-html/ra-routing-html.component';
 import { TodoListComponent } from './practice-folder/todo-list/todo-list.component';
+import { DirectivesComponent } from './practice-folder/directives/directives.component'; 
+import { CustomDirectivesDirective } from './directives/custom-directives.directive';
 
 
 @NgModule({
@@ -41,13 +43,15 @@ import { TodoListComponent } from './practice-folder/todo-list/todo-list.compone
     TrackbyComponent,
     RaRoutingHtmlComponent,
     TodoListComponent,
+    DirectivesComponent,
+    CustomDirectivesDirective
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

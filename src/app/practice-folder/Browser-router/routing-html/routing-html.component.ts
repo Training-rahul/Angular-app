@@ -6,9 +6,9 @@ import { slideInAnimation, fader, stepper } from 'src/app/animations/animations.
   templateUrl: './routing-html.component.html',
   styleUrls: ['./routing-html.component.css'],
   animations: [ 
-    // slideInAnimation,
+    slideInAnimation,
     // fader,
-       stepper
+      //  stepper
   ]
 })
 export class RoutingHtmlComponent implements OnInit {
