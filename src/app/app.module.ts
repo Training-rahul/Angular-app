@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -23,6 +24,8 @@ import { RaRoutingHtmlComponent } from './practice-folder/Router-animation/ra-ro
 import { TodoListComponent } from './practice-folder/todo-list/todo-list.component';
 import { DirectivesComponent } from './practice-folder/directives/directives.component'; 
 import { CustomDirectivesDirective } from './directives/custom-directives.directive';
+import { TemplateDrivenFormsComponent } from './forms-practice-folder/template-driven-form-folder/template-driven-forms/template-driven-forms.component';
+import { TdfmValidationsComponent } from './forms-practice-folder/template-driven-form-folder/tdfm-validations/tdfm-validations.component';
 
 
 @NgModule({
@@ -44,14 +47,17 @@ import { CustomDirectivesDirective } from './directives/custom-directives.direct
     RaRoutingHtmlComponent,
     TodoListComponent,
     DirectivesComponent,
-    CustomDirectivesDirective
+    CustomDirectivesDirective,
+    TemplateDrivenFormsComponent,
+    TdfmValidationsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

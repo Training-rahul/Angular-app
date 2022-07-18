@@ -1,0 +1,47 @@
+<h2>{{title}}</h2>
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+  <div>
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" ngModel>
+  </div>
+
+  <div>
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" ngModel>
+  </div>
+
+  <div>
+    <label for="email">Email </label>
+    <input type="text" id="email" name="email" ngModel>
+  </div>
+
+  <div>
+    <label for="gender">Geneder</label>
+    <input type="radio" value="male" id="gender" name="gender" ngModel> Male
+    <input type="radio" value="female" id="gender" name="gender" ngModel> Female
+  </div>
+
+  <div>
+    <label for="isMarried">Married</label>
+    <input type="checkbox" id="isMarried" name="isMarried" ngModel>
+  </div>
+
+  <div>
+    <label for="country">country </label>
+    <select name="country" id="country" ngModel>
+      <option>India</option>
+      <option>USA</option>
+      <option>Pakistan</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+
+  <pre>Value : {{contactForm.value | json }} </pre>
+  <pre>Valid : {{contactForm.valid}} </pre>
+  <pre>Touched : {{contactForm.touched  }} </pre>
+  <pre>Submitted : {{contactForm.submitted  }} </pre>
+
+</form>

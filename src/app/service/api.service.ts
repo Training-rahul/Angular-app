@@ -30,4 +30,7 @@ export class ApiService {
     return this.contacts
   }
 
+  public createContact(contact: {id:number,name:any,description:any,email:any}) {
+    this.contacts.push(contact)
+  }
 }

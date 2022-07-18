@@ -49,7 +49,7 @@ export class TodoListComponent implements OnInit {
       this.showInput =true
     } else {
       // this.items.push({title:this.newTask,name:this.newTaskk});
-      this.items.push({title:this.newTask})
+      this.items.unshift({title:this.newTask})
       this.newTask=""
       this.show = false
       this.showInput = false

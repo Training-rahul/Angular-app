@@ -3,4 +3,5 @@
 </p>
 <button [appCustomDirectives]="'blue'">Toggle</button>
 <br><br>
-<input type="text" (input)="change($event)">
+<input type="text" (input)="name=$event.target.value">
+<div> {{name}} </div>
